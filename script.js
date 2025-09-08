@@ -12,7 +12,7 @@ const freelanceData = {
     web: [
         { name: "Blast WhatsApp (Reall 100%)", link: "https://setorwa1.com/signup?ref=REF-386BB2E8" },
         { name: "atm05 (Reall 100%)", link: "https://atm05.com/#/reg?i=I9JWU4LF" },
-        { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
+        { name: "bonty grab ( Membayar 100%)", link: "http://bountygrab.com?shareCode=uBS8Uit2" }
     ]
 };
 
