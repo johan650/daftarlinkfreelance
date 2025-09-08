@@ -7,12 +7,12 @@ const freelanceData = {
     apk: [
         { name: "Jawab Quizz (Reall 100%)", link: "https://www.camile.mobi/?ref=czarwyf" },
         { name: "Poker (100% Reall) ref (9lz5g) bonus 500 ", link: "https://d1ak9ytuf35b5f.cloudfront.net/invite.id.html?code=9lz5g" },
-        { name: "-", link: "https://daftarlinkfreelance.jhnz.online/belum.html" }
+        { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ],
     web: [
         { name: "Blast WhatsApp (Reall 100%)", link: "https://setorwa1.com/signup?ref=REF-386BB2E8" },
         { name: "atm05 (Reall 100%)", link: "https://atm05.com/#/reg?i=I9JWU4LF" },
-        { name: "-", link: "https://daftarlinkfreelance.jhnz.online/belum.html" }
+        { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ]
 };
 
