@@ -6,7 +6,7 @@ const freelanceData = {
     ],
     apk: [
         { name: "Jawab Quizz (Reall Membayar 100%)", link: "https://www.camile.mobi/?ref=czarwyf" },
-        { name: "Poker (100% Reall) ref (9lz5g) bonus 500 ", link: "https://d1ak9ytuf35b5f.cloudfront.net/invite.id.html?code=9lz5g" },
+        { name: "Copot Baut (Reall Membayar 100%)", link: "https://m.luckyunscrew.com/share/index?r_id=646817&lang=id" },
         { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ],
     web: [
