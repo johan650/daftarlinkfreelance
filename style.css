@@ -1,0 +1,208 @@
+:root {
+    --bg-dark: #0A0A0A;
+    --card-dark: #1A1A1A;
+    --text-light: #E0E0E0;
+    --accent-color: #00ADB5;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+/* Category Cards */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--card-dark);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: left;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    animation: slideUp 0.8s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 30px var(--shadow-color);
+    background-color: #222;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #A0A0A0;
+    margin-bottom: 1.5rem;
+}
+
+.card-arrow {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-arrow {
+    opacity: 1;
+}
+
+/* Popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-content {
+    background-color: var(--card-dark);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px var(--shadow-color);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: scale(0.9);
+    animation: popupIn 0.3s ease forwards;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: var(--accent-color);
+}
+
+.popup-title {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.freelance-list {
+    list-style: none;
+    padding: 0;
+}
+
+.freelance-list li {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.freelance-list li:hover {
+    transform: translateX(5px);
+    background-color: #282828;
+}
+
+.freelance-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.freelance-list a:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popupIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}

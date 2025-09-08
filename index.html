@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero-title">Daftar Freelance </h1>
+        <p class="hero-subtitle">Pilih yang sekiranya beneran membayar jangan scam! kami hanya penyedia link saja</p>
+    </header>
+
+    <main class="categories-container">
+        <section class="card" onclick="showContent('tele')">
+            <h2 class="card-title">Telegram</h2>
+            <p class="card-desc">Pekerjaan freelance via grup & channel Telegram.</p>
+            <span class="card-arrow">&rarr;</span>
+        </section>
+
+        <section class="card" onclick="showContent('apk')">
+            <h2 class="card-title">Aplikasi</h2>
+            <p class="card-desc">Proyek dari aplikasi freelance terkemuka.</p>
+            <span class="card-arrow">&rarr;</span>
+        </section>
+
+        <section class="card" onclick="showContent('web')">
+            <h2 class="card-title">Website</h2>
+            <p class="card-desc">Kesempatan freelance dari berbagai website.</p>
+            <span class="card-arrow">&rarr;</span>
+        </section>
+    </main>
+
+    <div id="popup-overlay" class="popup-overlay" onclick="hideContent()">
+        <div id="popup-content" class="popup-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="hideContent()">&times;</span>
+            <h3 id="popup-title" class="popup-title"></h3>
+            <ul id="freelance-list" class="freelance-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
