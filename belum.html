@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Belum Ada Link</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            max-width: 90%;
+        }
+
+        .error-code {
+            font-size: 15vw;
+            font-weight: 700;
+            letter-spacing: 10px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            animation: glitch 2s infinite;
+        }
+
+        .message {
+            font-size: 2.5vw;
+            font-weight: 500;
+            margin-top: -30px;
+            line-height: 1.5;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact-message {
+            font-size: 1.5vw;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .telegram-logo {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 50px;
+            color: #0088cc;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+            cursor: pointer;
+            z-index: 3;
+        }
+        
+        .telegram-logo:hover {
+            transform: scale(1.1) rotate(10deg);
+            filter: drop-shadow(0 0 10px #0088cc);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 25vw;
+                letter-spacing: 5px;
+            }
+            .message {
+                font-size: 5vw;
+                margin-top: -10px;
+            }
+            .contact-message {
+                font-size: 3vw;
+            }
+            .telegram-logo {
+                font-size: 40px;
+                bottom: 15px;
+                left: 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            20% {
+                transform: translate(-5px, 5px);
+            }
+            40% {
+                transform: translate(-5px, -5px);
+            }
+            60% {
+                transform: translate(5px, 5px);
+            }
+            80% {
+                transform: translate(5px, -5px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Background animation */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(200, 200, 200, 0.1) 1px, transparent 1px),
+                        radial-gradient(circle, rgba(200, 200, 200, 0.1) 1px, transparent 1px);
+            background-size: 25px 25px;
+            background-position: 0 0, 12.5px 12.5px;
+            animation: background-pan 60s linear infinite;
+            z-index: 1;
+            opacity: 0.1;
+        }
+
+        @keyframes background-pan {
+            from {
+                background-position: 0 0, 12.5px 12.5px;
+            }
+            to {
+                background-position: 100px 100px, 112.5px 112.5px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="error-code">404</div>
+        <div class="message">Belum ada link freelance lainnya</div>
+        <div class="contact-message">Hubungi admin jika ada link baru</div>
+    </div>
+    <a href="t.me/Zinzstore" class="telegram-logo" target="_blank" aria-label="Hubungi Admin di Telegram">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+</body>
+</html>
