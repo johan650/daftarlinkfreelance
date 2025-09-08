@@ -1,11 +1,11 @@
 const freelanceData = {
     tele: [
-        { name: "moneyeverydaysbot (kemungkinan)", link: "https://t.me/money_everydays_bot/app?startapp=r_5037415993" },
-        { name: "Zona Iklan (tonton iklan) 100% real", link: "https://t.me/zonaiklanbot?start=5037415993" },
-        { name: "Setor wa (blast) 100% real", link: "https://t.me/terimawa_bot?start=5037415993" }
+        { name: "Zona Iklan (Real Membayar 100%)", link: "https://t.me/zonaiklanbot?start=5037415993" },
+        { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" },
+        { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ],
     apk: [
-        { name: "Jawab Quizz (Reall 100%)", link: "https://www.camile.mobi/?ref=czarwyf" },
+        { name: "Jawab Quizz (Reall Membayar 100%)", link: "https://www.camile.mobi/?ref=czarwyf" },
         { name: "Poker (100% Reall) ref (9lz5g) bonus 500 ", link: "https://d1ak9ytuf35b5f.cloudfront.net/invite.id.html?code=9lz5g" },
         { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ],
