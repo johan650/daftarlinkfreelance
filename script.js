@@ -10,6 +10,7 @@ const freelanceData = {
         { name: "-", link: "https://daftarlinkfreelance.vercel.app/belum.html" }
     ],
     web: [
+        { name: "Jawab Survery (Membayar 100%)", link: "https://primeopinion.com/register?ref=9e67064a-2be6-46ae-9c49-4c687250c643" },
         { name: "Blast WhatsApp (Reall 100%)", link: "https://setorwa1.com/signup?ref=REF-386BB2E8" },
         { name: "atm05 (Reall 100%)", link: "https://atm05.com/#/reg?i=I9JWU4LF" },
         { name: "bonty grab ( Membayar 100%)", link: "http://bountygrab.com?shareCode=uBS8Uit2" }
